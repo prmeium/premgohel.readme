@@ -1,0 +1,38 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Visual Studio Code / IDEs
+.vscode/
+.idea/
+
+# Node
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn.lock
+
+# Python
+venv/
+.env
+__pycache__/
+*.pyc
+
+# Build / output
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+
+# Misc
+*.swp
+Thumbs.db
+
+# Windows
+ehthumbs.db
+
+# Ignore local settings
+.env.local
+.env.*.local
