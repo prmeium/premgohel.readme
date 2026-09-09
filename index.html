@@ -4,10 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>prem</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 
+           The Builder Aesthetic: 
+           Ultra-minimal, raw, system fonts, text-heavy.
+        */
+        
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #111111;
+            --link-color: #0000ee;
+            --link-hover: #111111;
+            --secondary-text: #666666;
+            --border-color: #e0e0e0;
+        }
+
+        /* Auto dark-mode for standard terminal vibe */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0a0a0a;
+                --text-color: #ededed;
+                --link-color: #66b3ff;
+                --link-hover: #ffffff;
+                --secondary-text: #888888;
+                --border-color: #333333;
+            }
+        }
+
+        body {
+            /* Fallback to clean, readable system default fonts */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            
+            /* Narrow reading column */
+            max-width: 650px;
+            margin: 80px auto;
+            padding: 0 24px;
+            line-height: 1.6;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 600;
+            margin-top: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        h1.big-title {
+            font-size: 20px; /* Keep titles humble and small */
+            margin-top: 0;
+            margin-bottom: 2em;
+        }
+
+        h2.section-title {
+            font-size: 16px;
+            text-transform: lowercase;
+            color: var(--secondary-text);
+            margin-bottom: 1.5em;
+        }
+
+        p {
+            margin-bottom: 1.2em;
+        }
+
+        /* Raw link styling */
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            border-bottom: 1px solid var(--link-color);
+            transition: all 0.15s ease;
+        }
+
+        a:hover {
+            color: var(--link-hover);
+            border-bottom: 1px solid var(--link-hover);
+        }
+
+        /* Navigation */
+        nav.nav {
+            margin-bottom: 60px;
+            font-size: 14px;
+        }
+
+        nav.nav a {
+            margin-right: 15px;
+            color: var(--secondary-text);
+            border-bottom: none;
+            text-decoration: underline;
+            text-decoration-color: transparent;
+        }
+        
+        nav.nav a:hover {
+            color: var(--text-color);
+            text-decoration-color: var(--text-color);
+        }
+
+        /* Layout spacing */
+        section {
+            margin-bottom: 60px;
+        }
+
+        .skill-item, .project-item {
+            margin-bottom: 2.5em;
+        }
+
+        .project-header {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 0.25em;
+        }
+
+        .project-header h3, .project-item h3, .how-i-work h3 {
+            font-size: 16px;
+            margin: 0;
+            margin-bottom: 0.5em;
+        }
+
+        .project-year {
+            font-size: 14px;
+            color: var(--secondary-text);
+        }
+
+        .insight {
+            font-style: italic;
+            color: var(--secondary-text);
+            border-left: 2px solid var(--border-color);
+            padding-left: 15px;
+            margin-left: 5px;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 2em;
+        }
+
+        .divider {
+            margin: 40px 0;
+            border: 0;
+            border-top: 1px dashed var(--border-color);
+        }
+
+        .footer {
+            margin-top: 80px;
+            padding-bottom: 40px;
+            font-size: 14px;
+            color: var(--secondary-text);
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -219,7 +369,7 @@
             
             <div class="contact-links">
                 <a href="mailto:thepremsmith@gmail.com" class="contact-link">email me</a>
-                <a href="https://twitter.com/premmgohel" target="_blank" class="contact-link">X</a>
+                <a href="https://twitter.com/premmgohel" target="_blank" class="contact-link">x</a>
                 <a href="https://instagram.com/premmgohel" target="_blank" class="contact-link">insta</a>
                 <a href="https://linkedin.com/in/premmmm" target="_blank" class="contact-link">linkedin</a>
             </div>
